@@ -4,7 +4,6 @@ import { useState } from "react";
 import { generateFlow } from "./services/genkit";
 import Image from "next/image";
 import AvatarImg from "../../public/avatar.png";
-import CircleBullet from "./motion/CircleBullet";
 
 interface AvatarProps {
   status?: string;
@@ -47,14 +46,13 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex justify-around xl:flex-col items-center h-[100vh] bg-gradient-to-r from-amber-400 via-amber-500 to-amber-300 sm:flex-col max-[640px]:flex-col z-10 overflow-clip">
-        <CircleBullet />
+      <div className="flex justify-around xl:flex-col items-center h-screen bg-gradient-to-r from-amber-400 via-amber-500 to-amber-300 sm:flex-col max-[640px]:flex-col z-10 overflow-clip">
         <span
           content=""
           className="w-52 blur-3xl h-52 absolute left-0 top-0 -z-[0] bg-amber-500 rounded-full"
         ></span>
         <div className="flex flex-col gap-2 mb-32 w-full z-10">
-          <article className="h-auto xl:w-[750px] max-[640px]:w-[90%] max-[640px]:self-center sm:w-[90%] sm:self-center bg-white/50 border-2 border-white px-8 py-8 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-[900px]:overflow-y-scroll max-[900px]:max-h-[600px] max-[900px]:w-[85%]">
+          <article className="h-auto xl:w-[750px] max-[640px]:w-[90%] max-[640px]:self-center sm:w-[90%] sm:self-center bg-white/50 border-2 border-white px-8 py-8 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-[900px]:overflow-y-scroll max-[900px]:max-h-[600px] max-[900px]:w-[95%]">
             <h1 className="text-3xl font-bold text-black underline underline-offset-4 decoration-amber-400 max-[900px]:text-2xl">
               Siapkan Mental Kalian!
             </h1>
@@ -75,7 +73,7 @@ const Home = () => {
           </article>
         </div>
         <form
-          className="flex flex-col absolute z-50 bottom-4 xl:w-[40%] max-[900px]:w-[85%]"
+          className="flex flex-col absolute z-50 bottom-4 xl:w-[40%] max-[900px]:w-[95%]"
           onSubmit={async (e) => {
             e.preventDefault();
             const formData = new FormData(e.currentTarget);
