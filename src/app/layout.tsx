@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jaksel AI",
+  title: "Rawr AI",
   description: "AI Kritik menggunakan Bahasa Jakarta",
 };
 
