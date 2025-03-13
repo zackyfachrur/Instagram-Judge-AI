@@ -51,8 +51,8 @@ const Home = () => {
           content=""
           className="w-52 blur-3xl h-52 absolute left-0 top-0 -z-[0] bg-amber-500 rounded-full"
         ></span>
-        <div className="flex flex-col gap-2 mb-32 w-full z-10">
-          <article className="h-auto xl:w-[750px] max-[640px]:w-[90%] max-[640px]:self-center sm:w-[90%] sm:self-center bg-white/50 border-2 border-white px-8 py-8 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-[900px]:overflow-y-scroll max-[900px]:max-h-[440px] max-[900px]:w-[95%]">
+        <div className="flex flex-col gap-12 mb-32 w-full z-10">
+          <article className="h-auto xl:w-[750px] max-[640px]:w-[90%] max-[640px]:self-center sm:w-[90%] sm:self-center bg-white/50 border-2 border-white px-8 py-8 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-[900px]:overflow-y-scroll max-[900px]:max-h-[400px] max-[900px]:w-[95%]">
             <h1 className="text-3xl font-bold text-black underline underline-offset-4 decoration-amber-400 max-[900px]:text-2xl">
               Siapkan Mental Kalian!
             </h1>
