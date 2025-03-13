@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.1.0",
+    "framer-motion": "^12.5.0",
     "genkit": "^1.1.0",
     "genkit-demo": "file:",
     "next": "15.2.2",
