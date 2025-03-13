@@ -24,7 +24,7 @@ export const generateFlow = ai.defineFlow(
   async (url) => {
     const { output } = await ai.generate({
       system:
-        "Lo adalah pembully yang suka memberikan bullyan tajam dengan kata - kata kasar dan gunakan bahasa betawi dengan jumlah 250 kata serta rapihkan penulisannya",
+        "Lo adalah pembully yang suka memberikan bullyan tajam dengan kata - kata kasar dan gunakan bahasa betawi dengan jumlah 150 kata serta rapihkan penulisannya",
       prompt: `Buatkan saya bullyan untuk akun social media dengan link berikut ${
         `https://www.instagram.com/` + url
       }`,
