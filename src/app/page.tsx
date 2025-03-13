@@ -52,7 +52,7 @@ const Home = () => {
           className="w-52 blur-3xl h-52 absolute left-0 top-0 -z-[0] bg-amber-500 rounded-full"
         ></span>
         <div className="flex flex-col gap-2 mb-32 w-full z-10">
-          <article className="h-auto xl:w-[750px] max-[640px]:w-[90%] max-[640px]:self-center sm:w-[90%] sm:self-center bg-white/50 border-2 border-white px-8 py-8 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-[900px]:overflow-y-scroll max-[900px]:max-h-[600px] max-[900px]:w-[95%]">
+          <article className="h-auto xl:w-[750px] max-[640px]:w-[90%] max-[640px]:self-center sm:w-[90%] sm:self-center bg-white/50 border-2 border-white px-8 py-8 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-[900px]:overflow-y-scroll max-[900px]:max-h-[440px] max-[900px]:w-[95%]">
             <h1 className="text-3xl font-bold text-black underline underline-offset-4 decoration-amber-400 max-[900px]:text-2xl">
               Siapkan Mental Kalian!
             </h1>
@@ -61,8 +61,8 @@ const Home = () => {
                 <Avatar status="Sedang mengetik..." />
               ) : result ? (
                 <div className="flex flex-col gap-2">
-                  <Avatar status="Ini kritik buat instagram Lo 😭" />
-                  <p className="bg-white px-4 py-4 rounded-xl font-medium">
+                  <Avatar status="😭" />
+                  <p className="bg-white px-2 py-2 rounded-xl font-medium">
                     {result.judge}
                   </p>
                 </div>
@@ -87,7 +87,7 @@ const Home = () => {
           >
             Username Instagram
           </label>
-          <div className="text-xl flex border-2 justify-center items-center border-white outline-none text-white bg-white/20 placeholder-white rounded-xl px-4 py-2">
+          <div className="text-lg flex border-2 justify-center items-center border-white outline-none text-white bg-white/20 placeholder-white rounded-xl px-4 py-2">
             <input
               type="text"
               name="url"
