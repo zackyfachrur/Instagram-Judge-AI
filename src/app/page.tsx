@@ -30,12 +30,12 @@ const Home = () => {
     setLoading(true);
     setError(null);
     try {
-      const url = formData.get("url")?.toString() ?? "";
-      if (!url) {
-        setError("URL tidak boleh kosong!");
+      const username = formData.get("username")?.toString() ?? "";
+      if (!username) {
+        setError("username tidak boleh kosong!");
         return;
       }
-      const suggest = await generateFlow(url);
+      const suggest = await generateFlow(username);
       setResult(suggest);
     } catch (err) {
       setError("Terjadi kesalahan saat mengambil data.");
@@ -46,15 +46,15 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex justify-around xl:flex-col items-center h-screen bg-gradient-to-r from-amber-400 via-amber-500 to-amber-300 sm:flex-col max-[640px]:flex-col z-10 overflow-clip">
-        <span
+      <div className="flex justify-around xl:flex-col items-center h-screen bg-white sm:flex-col max-[640px]:flex-col z-10 overflow-clip">
+        {/* <span
           content=""
           className="w-52 blur-3xl h-52 absolute left-0 top-0 -z-[0] bg-amber-500 rounded-full"
-        ></span>
+        ></span> */}
         <div className="flex flex-col gap-12 mb-32 w-full z-10">
-          <article className="h-auto xl:w-[750px] max-[640px]:w-[90%] max-[640px]:self-center sm:w-[90%] sm:self-center bg-white/50 border-2 border-white px-8 py-8 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-[900px]:overflow-y-scroll max-[900px]:max-h-[400px] max-[900px]:w-[95%]">
-            <h1 className="text-3xl font-bold text-black underline underline-offset-4 decoration-amber-400 max-[900px]:text-2xl">
-              Siapkan Mental Kalian!
+          <article className="h-auto xl:w-[750px] max-[640px]:w-[90%] max-[640px]:self-center sm:w-[90%] sm:self-center px-2 py-2 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-[900px]:overflow-y-scroll max-[900px]:max-h-[400px] max-[900px]:w-[95%]">
+            <h1 className="xl:text-5xl font-bold text-black max-[900px]:text-2xl">
+              Rawr AI
             </h1>
             <div className="text-lg mt-2">
               {loading ? (
@@ -80,20 +80,21 @@ const Home = () => {
             await getResult(formData);
           }}
         >
-          <p className="text-xl font-bold">#janganbaperkawand</p>
+          <p className="text-xl font-bold">#justforfun</p>
           <label
-            htmlFor="url"
-            className="text-5xl font-bold text-white max-[640px]:text-3xl mb-2"
+            htmlFor="username"
+            className="text-5xl font-bold text-black max-[640px]:text-3xl mb-2"
           >
             Username Instagram
           </label>
-          <div className="text-lg flex border-2 justify-center items-center border-white outline-none text-white bg-white/20 placeholder-white rounded-xl px-4 py-2">
+          <div className="text-lg flex border-2 justify-center items-center border-black outline-none text-black bg-white/20 placeholder-black rounded-xl px-4 py-2">
             <input
               type="text"
-              name="url"
-              id="url"
+              name="username"
+              id="username"
               className="w-full px-8 py-2 outline-none"
               required
+              autoComplete="off"
               placeholder="Ketikkan Username Instagram"
             />
             <button
